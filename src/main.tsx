@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import App from "./App"
 import { AllDisplay } from "./components/AllDisplay"
 import { AutoBatch } from "./components/AutoBatch"
+import { NestedSuspense } from "./components/NestedSuspense"
 import { SuspenseDemo } from "./components/SuspenseDemo"
 import "./index.css"
 
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/autobatch" element={<AutoBatch />} />
         <Route path="/suspense" element={<SuspenseDemo />} />
         <Route path="/all_display" element={<AllDisplay />} />
+        <Route path="/nested_suspense" element={<NestedSuspense />} />
       </Routes>
     </BrowserRouter>
     <ReactQueryDevtools initialIsOpen={false} />
