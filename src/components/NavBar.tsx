@@ -14,6 +14,9 @@ export const NavBar = () => {
           <Link to="/suspense" className="navbarLink">
             Suspense
           </Link>
+          <Link to="/all_display" className="navbarLink">
+            All display
+          </Link>
           <Link to="/nested-suspense" className="navbarLink">
             Nested-Suspense
           </Link>

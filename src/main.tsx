@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "react-query"
 import { ReactQueryDevtools } from "react-query/devtools"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import App from "./App"
+import { AllDisplay } from "./components/AllDisplay"
 import { AutoBatch } from "./components/AutoBatch"
 import { SuspenseDemo } from "./components/SuspenseDemo"
 import "./index.css"
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />} />
         <Route path="/autobatch" element={<AutoBatch />} />
         <Route path="/suspense" element={<SuspenseDemo />} />
+        <Route path="/all_display" element={<AllDisplay />} />
       </Routes>
     </BrowserRouter>
     <ReactQueryDevtools initialIsOpen={false} />

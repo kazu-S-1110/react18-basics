@@ -13,5 +13,6 @@ export const useQueryTasks = () => {
   return useQuery({
     queryKey: ["tasks"],
     queryFn: getTasks,
+    staleTime: Infinity,
   })
 }
